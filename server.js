@@ -19,8 +19,8 @@ app.get("/", (req, res) => {
           justify-content: center;
           align-items: center;
           background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-          font-family: Arial, sans-serif;
-          color: black;
+          font-family: Roboto Mono, sans-serif;
+          color: orange;
         }
 
         .container {
