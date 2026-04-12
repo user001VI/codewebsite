@@ -1,0 +1,23 @@
+<input id="code">
+<button onclick="send()">Enter</button>
+<p id="msg"></p>
+
+<script>
+async function send() {
+  const code = document.getElementById("code").value;
+
+  const res = await fetch("/check", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ code })
+  });
+
+  const data = await res.json();
+
+  if (data.ok) {
+    window.location = data.go;
+  } else {
+    document.getElementById("msg").innerText = "Wrong code";
+  }
+}
+</script>
