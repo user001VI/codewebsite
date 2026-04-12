@@ -19,16 +19,9 @@ app.get("/", (req, res) => {
           justify-content: center;
           align-items: center;
           background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-          font-family: Roboto Mono, sans-serif;
+          font-family: 'Courier New', Courier, monospace;
+;
           color: orange;
-        }
-
-        .container {
-          background: rgba(0,0,0,0.6);
-          padding: 40px;
-          border-radius: 20px;
-          text-align: center;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         h1 {
