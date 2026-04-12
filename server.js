@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
           justify-content: center;
           align-items: center;
           background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-          font-family: 'Courier New', Courier, monospace;
+          font-family: 'White Rabbit', monospace;
 ;
           color: orange;
         }
