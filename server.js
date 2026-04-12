@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
           justify-content: center;
           align-items: center;
           background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-          font-family: 'White Rabbit', monospace;
+          font-family: monospace;
 ;
           color: orange;
         }
@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
         input {
           padding: 10px;
           border-radius: 8px;
+          align-items: center;
           border: none;
           width: 200px;
           margin-bottom: 15px;
