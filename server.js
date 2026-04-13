@@ -49,11 +49,10 @@ app.get("/", (req, res) => {
 
     <body>
       <div class="container">
-        <h1>Enter Access Code</h1>
+        <h1>enter code</h1>
         <form method="POST" action="/check">
-          <input type="text" name="code" placeholder="Enter code..." required />
+          <input type="text" name="code" placeholder=" " required />
           <br>
-          <button type="submit">Unlock</button>
         </form>
       </div>
     </body>
