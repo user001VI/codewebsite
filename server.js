@@ -8,33 +8,34 @@ app.use(express.urlencoded({ extended: true }));
 // homepage (code input)
 app.get("/", (req, res) => {
   res.send(`
+    <html>
     <head>
-  <title>Enter Code</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-      font-family: 'JetBrains Mono', monospace;
-      color: white;
-    }
-
-    .container {
-      background: rgba(0,0,0,0.6);
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-
-    input, button {
-      font-family: 'JetBrains Mono', monospace;
-    }
-  </style>
-</head>
+    <title>Enter Code</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+        font-family: 'JetBrains Mono', monospace;
+        color: white;
+      }
+  
+      .container {
+        background: rgba(0,0,0,0.6);
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      }
+  
+      input, button {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+  </head>
   `);
 });
 
