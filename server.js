@@ -23,14 +23,6 @@ app.get("/", (req, res) => {
           color: white;
         }
 
-        .container {
-          background: rgba(0,0,0,0.6);
-          padding: 40px;
-          border-radius: 20px;
-          text-align: center;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
         h1 {
           margin-bottom: 20px;
         }
