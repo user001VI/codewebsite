@@ -10,10 +10,6 @@ app.get("/", (req, res) => {
   res.send(`
     <head>
   <title>Enter Code</title>
-
-  <!-- Monospace font -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
