@@ -69,9 +69,9 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   const userCode = req.body.code;
 
-  const 27Code = "user27";// 🔑 change this
+  const "27Code" = "user27";
 
-  const 67Code = "user67";
+  const "67Code" = "user67";
 
   if (userCode === 27Code) {
     res.redirect("/27");
