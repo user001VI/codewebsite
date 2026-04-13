@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send(`
     <html>
     <head>
-      <title>Enter Code</title>
+      <title>enter code</title>
       <style>
         body {
           margin: 0;
@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+          background: black;
           font-family: 'JetBrains Mono', monospace;
-          color: Orange;
+          color: orange;
         }
         .container {
           background: rgba(0,0,0,0.0);
@@ -42,6 +42,7 @@ app.get("/", (req, res) => {
           margin-bottom: 15px;
           font-size: 16px;
           font-family: 'JetBrains Mono', monospace;
+          color: orange
         }
       </style>
     </head>
@@ -65,12 +66,12 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   const userCode = req.body.code;
 
-  const correctCode = "USER27"; // 🔑 change this
+  const correctCode = "user27"; // 🔑 change this
 
   if (userCode === correctCode) {
     res.redirect("/secret");
   } else {
-    res.send("<h2>Wrong code. Try again.</h2><a href='/'>Back</a>");
+    res.send("<h2>incorrect</h2><a href='/'>Back</a>");
   }
 });
 
