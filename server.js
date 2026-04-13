@@ -69,18 +69,113 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   const userCode = req.body.code;
 
-  const correctCode = "user27"; // 🔑 change this
+  const 27Code = "user27";// 🔑 change this
 
-  if (userCode === correctCode) {
-    res.redirect("/secret");
+  const 67Code = "user67";
+
+  if (userCode === 27Code) {
+    res.redirect("/27");
   } else {
-    res.send("<h2>incorrect</h2><a href='/'>Back</a>");
-  }
+    res.send(`
+    <html>
+    <head>
+      <title>   </title>
+      <style>
+        body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          font-family: 'JetBrains Mono', monospace;
+          color: orange;
+        }
+        .container {
+          background: rgba(0,0,0,0.0);
+          padding: 0px;
+          border-radius: 20px;
+          text-align: center;
+        }
+}
+
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <h1>incorrect</h1>
+          <br>
+        </form>
+      </div>
+    </body>
+    </html>
+  `);
 });
 
 // secret page
-app.get("/secret", (req, res) => {
-  res.send("<h1>Welcome to the secret page 👀</h1>");
+app.get("/27", (req, res) => {
+  res.send(`
+    <html>
+    <head>
+      <title>   </title>
+      </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <img src="file:///C:/Users/Owner/Downloads/Vergence%20Inc..png" style="max-width:100%; max-height:100%;" />
+          <br>
+        </form>
+      </div>
+    </body>
+    </html>
+  `);
+}););
+});
+
+app.get("/67", (req, res) => {
+  res.send(`
+    <html>
+     <head>
+      <title>   </title>
+      <style>
+        body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          font-family: 'JetBrains Mono', monospace;
+          color: orange;
+        }
+        .container {
+          background: rgba(0,0,0,0.0);
+          padding: 0px;
+          border-radius: 20px;
+          text-align: center;
+        }
+}
+
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <h1>ha ha you're so funny</h1>
+          <br>
+      </div>
+    <script>
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 3000);
+    </body>
+    </html>
+  `);
+}););
 });
 
 // start server
