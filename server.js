@@ -42,7 +42,11 @@ app.get("/", (req, res) => {
           margin-bottom: 15px;
           font-size: 16px;
           font-family: 'JetBrains Mono', monospace;
-          color: orange
+          color: orange;
+          background-color: #111; /* dark background */
+          outline: none;
+}
+
         }
       </style>
     </head>
