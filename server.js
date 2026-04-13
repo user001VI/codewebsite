@@ -134,7 +134,7 @@ app.get("/27", (req, res) => {
     </body>
     </html>
   `)
-}:
+};
 
 app.get("/67", (req, res) => {
   res.send(`
