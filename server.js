@@ -75,6 +75,7 @@ app.post("/check", (req, res) => {
 };
   if (userCode === "user27") {
     res.redirect("/27");
+  }
   if (userCode === "67") {
     res.redirect("/67");
   } else {
@@ -132,7 +133,8 @@ app.get("/27", (req, res) => {
       </div>
     </body>
     </html>
-  `);
+  `)
+}:
 
 app.get("/67", (req, res) => {
   res.send(`
@@ -173,7 +175,8 @@ app.get("/67", (req, res) => {
         }, 3000);
     </body>
     </html>
-  `);
+  `)
+};
 
 // start server
 app.listen(PORT, () => {
