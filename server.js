@@ -69,13 +69,13 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   const userCode = req.body.code;
 
-  const "27Code" = "user27";
-
-  const "67Code" = "user67";
-
-  if (userCode === "27Code") {
+  constconst codes = {
+  "user27": "/27",
+  "67": "/67",
+};
+  if (userCode === "user27") {
     res.redirect("/27");
-  if (userCode === "67Code") {
+  if (userCode === "67") {
     res.redirect("/67");
   } else {
     res.send(`
