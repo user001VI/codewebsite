@@ -20,8 +20,15 @@ app.get("/", (req, res) => {
           align-items: center;
           background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
           font-family: 'JetBrains Mono', monospace;
-          color: white;
+          color: Orange;
         }
+        .container {
+          background: rgba(0,0,0,0.0);
+          padding: 0px;
+          border-radius: 20px;
+          text-align: center;
+        }
+
 
         h1 {
           margin-bottom: 20px;
@@ -35,21 +42,6 @@ app.get("/", (req, res) => {
           margin-bottom: 15px;
           font-size: 16px;
           font-family: 'JetBrains Mono', monospace;
-        }
-
-        button {
-          padding: 10px 20px;
-          border: none;
-          border-radius: 8px;
-          background: #6c63ff;
-          color: white;
-          font-size: 16px;
-          cursor: pointer;
-          transition: 0.2s;
-        }
-
-        button:hover {
-          background: #5848d6;
         }
       </style>
     </head>
