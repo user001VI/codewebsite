@@ -115,7 +115,7 @@ app.post("/check", (req, res) => {
     </body>
     </html>
   `);
-
+});
 // secret page
 app.get("/27", (req, res) => {
   res.send(`
@@ -134,7 +134,7 @@ app.get("/27", (req, res) => {
     </body>
     </html>
   `)
-
+});
 app.get("/67", (req, res) => {
   res.send(`
     <html>
@@ -175,7 +175,7 @@ app.get("/67", (req, res) => {
     </body>
     </html>
   `)
-};
+});
 
 // start server
 app.listen(PORT, () => {
