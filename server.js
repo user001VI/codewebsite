@@ -81,7 +81,7 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   const userCode = req.body.code;
 
-  const correctCode = "SECRET123"; // 🔑 change this
+  const correctCode = "USER27"; // 🔑 change this
 
   if (userCode === correctCode) {
     res.redirect("/secret");
