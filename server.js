@@ -69,7 +69,7 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   const userCode = req.body.code;
 
-  constconst codes = {
+  const codes = {
   "user27": "/27",
   "67": "/67",
 };
