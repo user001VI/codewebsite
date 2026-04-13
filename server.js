@@ -8,64 +8,37 @@ app.use(express.urlencoded({ extended: true }));
 // homepage (code input)
 app.get("/", (req, res) => {
   res.send(`
-    <html>
     <head>
-      <title>Enter Code</title>
-      <style>
-        body {
-          margin: 0;
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
-          font-family: monospace;
-;
-          color: orange;
-        }
+  <title>Enter Code</title>
 
-        h1 {
-          margin-bottom: 20px;
-        }
+  <!-- Monospace font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 
-        input {
-          padding: 10px;
-          border-radius: 8px;
-          align-items: center;
-          border: none;
-          width: 200px;
-          margin-bottom: 15px;
-          font-size: 16px;
-        }
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+      font-family: 'JetBrains Mono', monospace;
+      color: white;
+    }
 
-        button {
-          padding: 10px 20px;
-          border: none;
-          border-radius: 8px;
-          background: #6c63ff;
-          color: white;
-          font-size: 16px;
-          cursor: pointer;
-          transition: 0.2s;
-        }
+    .container {
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
 
-        button:hover {
-          background: #5848d6;
-        }
-      </style>
-    </head>
-
-    <body>
-      <div class="container">
-        <h1>Enter Access Code</h1>
-        <form method="POST" action="/check">
-          <input type="text" name="code" placeholder="Enter code..." required />
-          <br>
-          <button type="submit">Unlock</button>
-        </form>
-      </div>
-    </body>
-    </html>
+    input, button {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
   `);
 });
 
