@@ -125,7 +125,9 @@ app.get("/27", (req, res) => {
 
     <body>
       <div class="container">
-        <img src="Public/Vergence Inc..png" style="max-width:100%; max-height:100%;" />
+        <img src="Public/Vergence Inc..png"> 
+        <style>
+          "max-width:100%; max-height:100%;"
           <br>
         </form>
       </div>
