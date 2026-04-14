@@ -4,6 +4,8 @@ const PORT = process.env.PORT || 3000;
 
 // middleware to read form data
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+
 
 // homepage (code input)
 app.get("/", (req, res) => {
@@ -123,7 +125,7 @@ app.get("/27", (req, res) => {
 
     <body>
       <div class="container">
-        <img src="Public/Vergence Inc..png" style="max-width:100%; max-height:100%;" />
+        <img src="public/Vergence Inc..png" style="max-width:100%; max-height:100%;" />
           <br>
         </form>
       </div>
