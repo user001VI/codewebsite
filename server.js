@@ -110,8 +110,9 @@ app.post("/check", (req, res) => {
       </div>
     </body>
     </html>
-  `);
-  });
+    `);
+  }
+});
 app.get("/27", (req, res) => {
   res.send(`
     <html>
