@@ -74,9 +74,9 @@ app.post("/check", (req, res) => {
   "67": "/67",
 };
   if (userCode === "user27") {
-  return res.redirect"/27";
+  return (res.redirect("/27"));
 } else if (userCode === "67") {
-  return res.redirect"/67";
+  return (res.redirect("/67"));
 } else {
     res.send(`
     <html>
