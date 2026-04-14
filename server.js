@@ -119,13 +119,13 @@ app.get("/27", (req, res) => {
   res.send(`
     <html>
     <head>
-      <title>   </title>
+      <title> the main character  </title>
       </style>
     </head>
 
     <body>
       <div class="container">
-        <img src="Public/Vergence Inc..png"> 
+        <img src="Public/themaincharacter.png"> 
         <style>
           "max-width:100%; max-height:100%;"
           <br>
