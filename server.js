@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
           outline: none;
 }
 
-        }
+        
       </style>
     </head>
 
@@ -74,11 +74,10 @@ app.post("/check", (req, res) => {
   "67": "/67",
 };
   if (userCode === "user27") {
-    res.redirect("/27");
-  }
-  if (userCode === "67") {
-    res.redirect("/67");
-  } else {
+  return res.redirect("/27");
+} else if (userCode === "67") {
+  return res.redirect("/67");
+} else {
     res.send(`
     <html>
     <head>
@@ -100,9 +99,6 @@ app.post("/check", (req, res) => {
           border-radius: 20px;
           text-align: center;
         }
-}
-
-        }
       </style>
     </head>
 
@@ -115,8 +111,7 @@ app.post("/check", (req, res) => {
     </body>
     </html>
   `);
-};
-// secret page
+});
 app.get("/27", (req, res) => {
   res.send(`
     <html>
@@ -156,9 +151,6 @@ app.get("/67", (req, res) => {
           padding: 0px;
           border-radius: 20px;
           text-align: center;
-        }
-}
-
         }
       </style>
     </head>
