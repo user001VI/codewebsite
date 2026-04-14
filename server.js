@@ -115,7 +115,7 @@ app.post("/check", (req, res) => {
     </body>
     </html>
   `);
-});
+};
 // secret page
 app.get("/27", (req, res) => {
   res.send(`
